@@ -40,15 +40,13 @@ public class Fabricante {
 	
 	public static Fabricante fabricaMayorVentas() {
 		
-		Fabricante mayor = null;
+		Fabricante mayor = fabricantes.get(0);
 		for(int i = 1; i < Fabricante.fabricantes.size(); i++) {
 			
-			if(fabricantes.get(i-1).getVehiculosVendidos() >= fabricantes.get(i).getVehiculosVendidos()) {
+			if(mayor.getVehiculosVendidos() <= fabricantes.get(i).getVehiculosVendidos()) {
 				mayor = fabricantes.get(i);
 			}
-			else {
-				mayor = fabricantes.get(i+1);
-			}
+			
 		}
 		return mayor;
 		
