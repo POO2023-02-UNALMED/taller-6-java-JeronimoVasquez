@@ -18,7 +18,7 @@ public class Pais {
 		return this.ventas;
 	}
 	
-	public static Pais masVendedor() {
+	public static Pais paisMasVendedor() {
 		
 		Pais mayor = paises.get(0);
 		for(int i = 0; i < paises.size(); i++) {
@@ -41,10 +41,7 @@ public class Pais {
 		this.nombre = nombre;
 	}
 	
-	public static String paisMasVendedor() {
-		return masVendedor().getNombre();
-		
-	}
+	
 	
 	
 

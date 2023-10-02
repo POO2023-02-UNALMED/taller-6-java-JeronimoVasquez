@@ -38,7 +38,7 @@ public class Fabricante {
 		return this.vehiculosVendidos;
 	}
 	
-	public static Fabricante mayorVentas() {
+	public static Fabricante fabricaMayorVentas() {
 		
 		Fabricante mayor = fabricantes.get(0);
 		for(int i = 0; i < Fabricante.fabricantes.size(); i++) {
@@ -54,10 +54,7 @@ public class Fabricante {
 		
 	}
 	
-	public static String fabricaMayorVentas() {
-		return mayorVentas().getNombre();
-		
-	}
+
 	
 	
 
