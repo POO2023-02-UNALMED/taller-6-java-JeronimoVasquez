@@ -22,13 +22,14 @@ public class Pais {
 	public static Pais paisMasVendedor() {
 		
 		Pais mayor = null;
-		for(int i = 0; i <= paises.size(); i++) {
+		for(int i = 1; i < paises.size(); i++) {
 			
-			if(paises.get(i).getVentas() >= paises.get(i+1).getVentas()) {
-				mayor = paises.get(i);
+			if(paises.get(i-1).getVentas() >= paises.get(i).getVentas()) {
+				mayor = paises.get(i-1);
 			}
+			
 			else {
-				mayor = paises.get(i+1);
+				mayor = paises.get(i);
 			}
 		}
 		return mayor;
