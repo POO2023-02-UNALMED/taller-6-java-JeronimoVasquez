@@ -24,6 +24,7 @@ public class Vehiculo {
 		this.fabricante = fabricante;
 		this.fabricante.venderVehiculo();
 		this.fabricante.pais.vender();
+		cantidadVehiculos++;
 	}
 	
 	public String getPlaca() {
@@ -85,6 +86,8 @@ public class Vehiculo {
 		
 		return "Automoviles: " + Automovil.numeroAutomoviles() + "\n" + "Camionetas: " + Camioneta.numeroCamionetas() + "\n" + "Camiones: " + Camion.numeroCamiones();
 	}
+	
+	
 	
 	
 		
