@@ -8,6 +8,7 @@ public class Pais {
 	
 	public Pais(String nombre) {
 		this.nombre = nombre;
+		paises.add(this);
 	}
 	
 	public void vender() {
@@ -20,7 +21,7 @@ public class Pais {
 	
 	public static Pais paisMasVendedor() {
 		
-		Pais mayor = paises.get(0);
+		Pais mayor = null;
 		for(int i = 0; i <= paises.size(); i++) {
 			
 			if(paises.get(i).getVentas() >= paises.get(i+1).getVentas()) {
